@@ -48,3 +48,8 @@ Join Departments ON
 Dept_emp.dept_no=Departments.dept_no
 WHERE dept_name='Sales' OR dept_name='Development';
 
+--8
+SELECT last_name, COUNT(last_name) AS "name count"
+FROM Employees
+GROUP BY last_name
+ORDER BY "name count" DESC;
