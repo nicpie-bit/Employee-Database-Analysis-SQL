@@ -38,3 +38,13 @@ Employees.emp_no=Dept_emp.emp_no
 Join Departments ON
 Dept_emp.dept_no=Departments.dept_no
 WHERE dept_name='Sales';
+
+--7
+SELECT Dept_emp.emp_no, Employees.last_name, Employees.first_name, Departments.dept_name
+FROM Employees
+JOIN Dept_emp ON
+Employees.emp_no=Dept_emp.emp_no
+Join Departments ON
+Dept_emp.dept_no=Departments.dept_no
+WHERE dept_name='Sales' OR dept_name='Development';
+
