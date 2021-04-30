@@ -29,3 +29,12 @@ Dept_emp.dept_no=Departments.dept_no;
 SELECT Employees.first_name, Employees.last_name, Employees.sex
 FROM Employees
 WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
+
+--6
+SELECT Dept_emp.emp_no, Employees.last_name, Employees.first_name, Departments.dept_name
+FROM Employees
+JOIN Dept_emp ON
+Employees.emp_no=Dept_emp.emp_no
+Join Departments ON
+Dept_emp.dept_no=Departments.dept_no
+WHERE dept_name='Sales';
