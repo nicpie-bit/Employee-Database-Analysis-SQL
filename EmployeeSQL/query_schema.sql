@@ -28,4 +28,4 @@ Dept_emp.dept_no=Departments.dept_no;
 --5
 SELECT Employees.first_name, Employees.last_name, Employees.sex
 FROM Employees
-WHERE fisrt_name='Hercules' AND last_name='B'
+WHERE first_name = 'Hercules' AND last_name LIKE 'B%';
