@@ -10,11 +10,22 @@ FROM Employees
 WHERE hire_date>='01/01/86' AND hire_date<='12/31/86';
 
 --3
-SELECT Departments.dept_no, Departments.dept_name, Dept_emp.dept_no, Employees.last_name, Employees.first_name 
+SELECT Departments.dept_no, Departments.dept_name, Dept_manager.emp_no, Employees.last_name, Employees.first_name 
 FROM Employees
-JOIN Dept_emp ON 
-Employees.emp_no=Dept_emp.emp_no
+JOIN Dept_manager ON 
+Employees.emp_no=Dept_manager.emp_no
 JOIN Departments ON
-Departments.dept_no=Dept_emp.dept_no;
+Departments.dept_no=Dept_manager.dept_no;
 
 --4
+SELECT Dept_emp.emp_no, Employees.last_name, Employees.first_name, Departments.dept_name
+FROM Dept_emp
+JOIN Employees ON
+Dept_emp.emp_no=Employees.emp_no
+JOIN Departments ON
+Dept_emp.dept_no=Departments.dept_no;
+
+--5
+SELECT Employees.first_name, Employees.last_name, Employees.sex
+FROM Employees
+WHERE fisrt_name='Hercules' AND last_name='B'
