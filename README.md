@@ -15,6 +15,8 @@ In this assignment, I will design the tables to hold the data in the CSVs, impor
 
 I inspected the CSVs and sketched out an ERD of the tables.
 
+  ![ERD](EmployeeSQL/Images/Employees_ERD.png)
+
 #### Data Engineering
 
 * I used the information from my ERD to create a table schema for each of the six CSV files.
@@ -57,4 +59,4 @@ The data is fake!
 
 ## Jokes On Me
 
-With the evidence in my hands, I marched into your boss's office to present the visualization. With a sly grin, my boss thanks me for my work. Turns out this was all an April Fool's Joke!
+I marched into your boss's office to present the visualization. Turns out this was all an April Fool's Joke!
